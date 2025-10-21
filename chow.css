@@ -275,6 +275,7 @@ nav .fa-bars{
 }
 .mob img{
     max-width: 100%;
+    margin: auto;
 }
 .paste{
     position: absolute;
@@ -319,7 +320,7 @@ nav .fa-bars{
   width: 95%;
   margin: auto;
   justify-content: space-between;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
 }
 .c-boder{
     border: 2px solid black;
@@ -371,6 +372,51 @@ nav .fa-bars{
         flex-direction: column;
         align-items: center;
     }
+}
+.last-sect .tet{
+    text-align: center;
+    color: #D1D5DB;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3em;
+    padding-top: 1em;
+}
+.card-2{
+  display: flex;
+  gap: 2em;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 2.5em;
+  padding-bottom: 2em;
+}
+.c-boder2{
+    border: 4px solid black;
+    width: 480px;
+    height: 450px;
+    border-radius: 16px;
+    /* padding-left: 20px; */
+    /* padding: 20px; */
+}
+.c-boder2 .pics{
+    width: 100%;
+    margin: auto;
+    padding-top: 8em;
+}
+.card-2 svg{
+}
+.star{
+    padding: 20px;
+}
+.card-2 p{
+   padding-bottom: .5em;
+   padding-left: 20px;
+}
+.card-2 a{
+    padding-left: 20px;
+}
+.card-2 h2{
+    padding-bottom: .5em;
+    padding-left: 20px;
 }
 
 
