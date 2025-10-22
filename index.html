@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
     </div>
     <section class="hero-sect">
         <h1>You don chow?</h1>
-        <div class="btn">
+        <div class="btn-1">
             <a href=""><img src="./images/google.png" width="17px" alt="">Download on Google play</a>
             <a href=""><img src="./images/imgi_51_apple-512.ico" width="20px" alt="">Download on App store</a>
         </div>
@@ -45,7 +46,7 @@
         <p>Try the everything app.</p>
         <div class="mob"><img src="./images/mobile.png" alt=""></div>
         <div class="paste"><img src="./images/Pastry.png" alt=""></div>
-        <div class="card">
+        <div class="card-1">
             <div class="res c-boder">
                 <img src="./images/resturants.png" class="ima"  alt="">
                 <h2>Resturants</h2>
@@ -103,10 +104,88 @@
         </div>
     </section> 
     <section class="marq">
-        <div class="quee">
-            <h1>Unpack and enjoy</h1>
-            <div class="pack"><img src="./images/pack.png" alt=""></div>
+        <div class="hold">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                 <div class="caro-container">
+                   <div class="carousel-inner">
+                   
+                        <div class="carousel-item active pack">
+                        <h1>Unpack and enjoy</h1>
+                    </div>
+
+                    <div class="carousel-item start">
+                        <h1>Get Started in 3</h1>
+                    </div>
+
+                    <div class="carousel-item app">
+                        <h1>Download the app</h1>
+                    </div>
+                    <div class="carousel-item exp">
+                        <h1>Explore categories</h1>
+                    </div>
+                    <div class="carousel-item ord">
+                        <h1>Place your order</h1>
+                    </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
+        <div class="word">
+            <h2>Chowdeck has you covered <img src="./images/chops.png" alt=""></h2>
+            <p>What do you need? A quick fix on a busy day? Last-minute dinner backup? Supplies for the week? Download Chowdeck and let's deliver happiness to your doorstep in minutes.</p>
+        </div>
+        <marquee behavior="smooth" direction="left">
+            <div class="quees">
+            <div class="sli">
+                <svg width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-kiwi" style="color: pink;"><path d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z" fill="currentColor"></path></svg>
+                <p>Essential healthcare supplies</p>
+            </div>
+            <div class="sli">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#FF884D]" style="color: #FF884D;">
+                 <path d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z" 
+                 fill="currentColor"></path></svg>
+                <p>Quick-grap groceries</p>
+            </div>
+            <div class="sli">
+                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-onion-100" style="color: #8C77EC;">
+                <path d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z" fill="currentColor"></path></svg>
+                <p>Live updates on orders</p>
+            </div>
+            <div class="sli">
+                <img src="./images/locatin.png" alt="">
+                <p>Highly rated riders</p>
+            </div>
+            <div class="sli">
+                <svg width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-kiwi" style="color: pink;"><path d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z" fill="currentColor"></path></svg>
+                <p>24/7 support for customers and vendors</p>
+            </div>
+            <div class="sli">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#FF884D]" style="color: rgb(208, 208, 40);">
+                 <path d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z" 
+                 fill="currentColor"></path></svg>
+                <p>Quick and easy onboarding</p>
+            </div>
+             <div class="sli">
+                <svg width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-kiwi" style="color: rgb(219, 150, 22);"><path d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z" fill="currentColor"></path></svg>
+                <p>Quality meal choices</p>
+            </div>
+            <div class="sli">
+                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-onion-100" style="color: green;">
+                <path d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z" fill="currentColor"></path></svg>
+                <p>Fresh market picks</p>
+            </div>
+            </div>
+        </marquee>
     </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
