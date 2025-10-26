@@ -1300,6 +1300,14 @@ nav .fa-bars{
         font-family: 'Plus Jakarta Sans', sans-serif;
     }
 }
+@media(max-width:611px){
+    .ft-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    }
+}
 @media(max-width:583px){
     .com{
         justify-content: left;
