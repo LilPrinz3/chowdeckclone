@@ -1,0 +1,417 @@
+@import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+header{
+    padding: 30px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+nav{
+    display: flex;
+    width: 99%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 30px; */
+}
+.menu-list{
+    padding: 16px 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+.first-list{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.first-list a{
+    text-decoration: none;
+}
+.first-list .text{
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: smaller;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+.logo{
+    background-color: #0C513F;
+    padding: 5px 30px;
+    border-radius: 40px;
+    width: 160px;
+}
+.nig{
+    width: 18px;
+
+}
+.cart{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 12px;
+}
+.menu-list{
+    display: flex;
+    gap: 2em; 
+    align-items: center;                                          
+}
+.menu-list a{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.text{
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+nav .fa-bars{
+    display: none;
+}
+/* media query */
+@media (max-width: 1026px){
+    .menu-list{
+        display: none;
+    }
+    nav .fa-bars{
+        display: block;
+        font-size: 2.5em;
+    }
+    .logo{
+        width: 200px;
+    }
+    .nig{
+        width: 25px;
+    }
+}
+@media (max-width: 600px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+    nav .fa-bars{
+        display: block;
+        font-size: 1.5em;
+    }
+    .first-list{
+        gap: .5em;
+    }
+    .logo{
+        width: 130px;
+    }
+    .nig{
+        width: 10px;
+    }
+    .text{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 40px;
+}
+}
+body{
+    background-color: #0C513F;
+}
+.hero-sect{
+    position: relative;
+}
+.big{
+    position: absolute;
+    top: 14em;
+    right: 9em;
+}
+.champ{
+    position: absolute;
+    padding-left: 1em;
+    z-index: 999;
+}
+.champ p{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-bottom: .3em;
+    font-weight: 700;
+    font-size: 100px;
+    padding-top: 2.3em;
+    /* padding-left: .2em; */
+    width: 70%;
+}
+.down{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+    /* padding: 1em; */
+    /* padding-left: 1em; */
+
+}
+.app{
+   display: flex;
+    align-items: center;
+    background-color: white;
+    color: #125544;
+    width: 25%;
+    height: 60px;
+    /* margin: auto; */
+    padding: 1em;
+    /* padding: 20px 17px; */
+    gap: .5em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 5px; 
+}
+/* media query */
+@media(max-width:1257px){
+    .big{
+    position: absolute;
+    top: 31em;
+    /* right: 18em; */
+    left: 32em;
+}
+.big img{
+    width: 450px;
+}
+.champ{
+    padding-left: 5em;
+}
+.app{
+    width: 27%;
+}
+}
+@media(max-width:1007px){
+    .big{
+    position: absolute;
+    top: 4em;
+    left: 25em;
+}
+.big img{
+    width: 400px;
+}
+.champ{
+    padding-left: 9em;
+}
+.app{
+    width: 33%;
+}
+.champ p{
+    font-size: 80px;
+    padding-top: 3.2em;
+}
+}
+@media(max-width:822px){
+    .big{
+    position: absolute;
+    top: 4em;
+    left: 19em;
+}
+.champ{
+    padding-left: 3em;
+}
+.app{
+    width: 43%;
+    padding: 2em;
+}
+}
+@media(max-width:768px){
+    .down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7em;
+}
+    .big{
+    position: absolute;
+    top: 15em;
+    left: 20em;
+}
+.big img{
+    width: 350px;
+}
+.champ p{
+    font-size: 50px;
+    padding-top: 5em;
+    padding-left: 4em;
+    text-align: center;
+    padding-bottom: .7em;
+}
+.app{
+    width: 45%;
+    padding: 2.2em;
+}
+}
+@media(max-width:694px){
+     .big{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+}
+.app{
+    width: 55%;
+    padding: 2.5em;
+}
+}
+@media(max-width:679px){
+    .champ p{
+        width: 80%;
+        padding-left: 1em;
+    }
+}
+@media(max-width:593px){
+       .big{
+    position: absolute;
+    top: 15em;
+    left: 10em;
+}
+.app{
+    width: 55%;
+    padding: 2em;
+}
+}
+@media(max-width:557px){
+.big img{
+    width: 250px;
+}
+.app{
+    width: 65%;
+    padding: 2em;
+    justify-content: center;
+}
+}
+@media(max-width:479px){
+    .champ p{
+        padding-left: 0;
+    }
+.app{
+    width: 65%;
+    padding: 0;
+    justify-content: center;
+}
+.down{
+    padding-left: 0em;
+}
+}
+@media(max-width:429px){
+           .big{
+    position: absolute;
+    top: 15em;
+    left: 5em;
+}
+}
+    @media(max-width:388px){
+        .app{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+}
+}
+ @media(max-width:350px){
+    .champ p{
+        font-size: 40px;
+        width: 80%;
+        padding-left: 1em;
+    }
+ }
+.flow{
+    background-color: white;
+    position: relative;
+    top: 70em;
+}
+.carl {
+ border: 5px solid black;
+  position: relative;
+  top: -8em;
+  width: 96%;
+  margin: auto;
+  /* height: 320px; */
+  /* margin: 40px auto; */
+  margin: auto;
+  overflow: hidden;
+  border-radius: 17px;
+  background: #FFFFFF;
+}
+
+.slide{
+  display: flex;
+  /* justify-content: space-between; */
+  /* width: 300%;
+  height: 100%; */
+}
+
+.sid{
+  /* flex-shrink: 0; */
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  padding-top: 2em;
+}
+.unlock h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    width: 90%;
+}
+.unlock p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    padding-top: 2em;
+    width: 58%;
+}
+.ime {
+    width: 50%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.logs{
+    display: flex;
+    align-items: center;
+    padding-top: 2em;
+    gap: .3em;
+}
+.logs .fa-apple{
+    background-color: #0C513F;
+    color: white;
+    font-size: 1.4em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.logs .gog{
+    border-radius: 50%;
+    padding: 13px;
+    background-color: #0C513F;
+    width: 45px;
+    height: 45px;
+}
+/* media query */
+@media(max-width:1220px){
+    .carl {
+  position: relative;
+  top: -8em;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.unlock h1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    width: 100%;
+}
+.sid{
+  /* flex-shrink: 0; */
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+}

@@ -102,14 +102,19 @@ nav .fa-bars{
         font-size: 1.5em;
     }
     .first-list{
-        gap: 1em;
+        gap: .5em;
     }
     .logo{
-        width: 90px;
+        width: 130px;
     }
     .nig{
         width: 20px;
     }
+       .text{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 40px;
+}
 }
 .bg-image{
     position: relative;
