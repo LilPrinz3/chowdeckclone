@@ -115,31 +115,26 @@ nav .fa-bars{
 }
 body{
     background-color: #D1C9F7;
+    /* position: relative; */
 }
 .div-hero1{
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     background-image: url('../images/bg-dotss.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.hand{
-    width: 100%;
-    height: 300px;
-    /* border: 2px solid black; */
-    background-image: url('../images/chowpass-hand.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+ .hand img{
+    max-width: 100%;
+ }
 .div-hero1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
-    padding-top: 10em;
+    padding-top: 22em;
 }
 .tet{
     display: flex;
@@ -152,4 +147,661 @@ body{
     font-weight: 700;
     font-size: 70px;
     text-align: center;
+}
+.div-hero1 p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.div-hero1 a{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #271386;
+    padding: 17px 37px;
+    border-radius: 7px;
+}
+/* media query */
+@media(max-width:1037px){
+    .div-hero1{
+        padding-top: 7em;
+    }
+}
+@media(max-width:792px){
+    .div-hero1 h1{
+        font-size: 50px;
+    }
+}
+@media(max-width:591px){
+    .div-hero1{
+        padding-top: 3em;
+    }
+}
+@media(max-width:461px){
+    .div-hero1{
+        padding-top: 1em;
+    }
+    .div-hero1 h1{
+        width: 70%;
+        margin: auto;
+    }
+
+}
+@media(max-width:452px){
+    .div-hero1 h1{
+        font-size: 40px;
+        width: 100%;
+    }
+
+}
+.bene{
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    color: #271386;
+    font-size: 14px;
+    padding-top: 12em;
+}
+.carousel{
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 3em;
+    margin-top: 1em;
+
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    display: flex;
+    gap: 1em;
+    border-radius: 15px;
+    scroll-snap-align: start;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.card-1{
+    background-color: white;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+.hols{
+    display: flex;
+    padding: 2em;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.hols h3{
+    color: #271386;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.card-1 p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #271386;
+    font-size: 14px;
+    padding: 2em;
+}
+/* media query */
+@media(max-width:1037px){
+    .bene{
+        padding-top: 4em;
+    }
+}
+@media(max-width:792px){
+    .bene{
+        padding-top: 0;
+    }
+}
+@media(max-width:591px){
+    .card{
+        padding: 2em;
+    }
+}
+.next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -60em;
+}
+.mail{
+    position: relative;
+    top: 5em;
+}
+.mail img{
+    max-width: 100%;
+}
+.next p{
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.mem{
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    color: #271386;
+    font-size: 70px;
+    width: 55%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+.mailer{
+    position: absolute;
+    top: 31em;
+    right: 0;
+}
+.mailer img{
+    max-width: 100%;
+}
+/* media query */
+@media(max-width:1151px){
+    .next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -62em;
+}
+.mem{
+    width: 60%;
+}
+}
+@media(max-width:1056px){
+    .mem{
+    width: 70%;
+}
+}
+@media(max-width:1036px){
+    .next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -52em;
+}
+}
+@media(max-width:904px){
+    .next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -48em;
+}
+  .mem{
+    width: 69%;
+    font-size: 50px;
+    padding-bottom: 4.5em;
+}
+.mailer{
+    position: absolute;
+    top: 27em;
+    right: 0;
+}
+}
+@media(max-width:865px){
+    .next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -52em;
+}
+}
+@media(max-width:752px){
+    .next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -40em;
+}
+ .mem{
+    width: 69%;
+    font-size: 40px;
+    padding-bottom: 4.5em;
+}
+.mailer{
+    position: absolute;
+    top: 23em;
+    right: 0;
+}
+}
+@media(max-width:652px){
+ .mem{
+    width: 79%;
+    font-size: 40px;
+    padding-bottom: 4.5em;
+}
+}
+@media(max-width:604px){
+    .next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -44em;
+}
+}
+@media(max-width:460px){
+ .mem{
+    width: 79%;
+    font-size: 30px;
+    padding-bottom: 6em;
+}
+ .next{
+    background-color: #E8E4FB;
+    position: absolute;
+    width: 100%;
+    bottom: -40em;
+}
+.mailer{
+    position: absolute;
+    top: 20em;
+    right: 0;
+}
+}
+.slat{
+    background-color: black;
+    position: absolute;
+    top: 36em;
+    width: 100%;
+}
+
+.tors{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    gap: 1em;
+    padding-top: 3em;
+}
+.tors .hand{
+    width: 50%;
+}
+.tors h1{
+    color: #271386;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    width: 70%;
+    padding-left: .5em;
+}
+.cover-img{
+    background-image: url('../images/evenes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130vh;
+}
+.orst{
+    background-color: #D1C9F7;
+    width: 50%;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+.olo{
+    padding: 2em;
+}
+.dwn{
+    display: flex;
+    background-color: white;
+    width: 45%;
+    padding: 15px 20px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 7px;
+    margin-bottom: 1em;
+}
+.dwn a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: small;
+    gap: .5em;
+}
+.str{
+    display: flex;
+    background-color: white;
+    width: 45%;
+    padding: 15px 25px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 7px;
+    font-size: small;
+}
+.str a{
+    text-decoration: none;
+    color: black;
+    /* text-align: center; */
+}
+.lat{
+    display: none;
+}
+.later{
+    display: flex;
+    gap: .5em;
+    /* padding-top: 1em; */
+    padding: 1em;
+}
+.later .fa-apple{
+    color: #0C513F;
+    font-size: 1.4em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    /* margin-top: 1em; */
+}
+.later .goo{
+    border-radius: 50%;
+    padding: 11px;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+}
+.later .goo:hover{
+    cursor: pointer;
+}
+/* media query */
+@media(max-width:1216px){
+    .cover-img{
+    background-image: url('../images/evenes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+}
+@media(max-width:1102px){
+    .dwn{
+        width: 50%;
+    }
+    .str{
+        width: 50%;
+    }
+}
+@media(max-width:1023px){
+    .dwn{
+        display: none;
+    }
+    .str{
+        display: none;
+    }
+    .lat{
+        display: block;
+    }
+}
+@media(max-width:919px){
+    .tors{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    gap: 1.5em;
+    padding-top: 7em;
+}
+.tors .hand{
+    height: 300px;
+    width: 100%;
+}
+   .cover-img{
+    background-image: url('../images/evenes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35vh;
+}
+.orst{
+    background-color: #D1C9F7;
+    width: 100%;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+.tors h1{
+    color: #271386;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    width: 75%;
+    padding-left: .5em;
+}
+}
+@media(max-width:768px){
+    .tors .hand{
+        display: none;
+    }
+     .cover-img{
+    background-image: url('../images/evenes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45vh;
+}
+.tors h1{
+    color: #271386;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    width: 60%;
+    padding-left: .5em;
+}
+}
+@media(max-width:494px){
+.tors h1{
+    color: #271386;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    width: 70%;
+    padding-left: .5em;
+}
+}
+.ending{
+    padding-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.ending img{
+    width: 95px;
+}
+.ing{
+    display: flex;
+    gap: 1em;
+}
+.spa{
+    font-weight: 400;
+    font-size: medium;
+}
+.ing .pee{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+/* media query */
+@media(max-width: 743px){
+    .ing .pee{
+        width: 50%;
+    }
+}
+@media(max-width: 601px){
+    .ending img{
+        display: none;
+    }
+    .ing .pee{
+        width: 90%;
+        font-size: 1.5em;
+    }
+}
+@media(max-width: 490px){
+    .ending img{
+        display: none;
+    }
+    .ing .pee{
+        width: 80%;
+        font-size: 1em;
+    }
+}
+.ft-1{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    padding: 2em;
+    /* margin: auto; */
+    /* border-top: 1px solid #666666; */
+}
+.ft-1 p{
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   font-weight: 700; 
+   color: #666666;
+}
+.liss{
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+}
+.liss p{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: .5em;
+}
+.liss p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.liss h4{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #666666;
+    font-weight: 600;
+    font-size: 1em;
+    padding-bottom: 2em;
+}
+.com{
+    border-left: 1px solid #666666;
+    padding: 1em;
+}
+.decks{
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em;
+}
+.ign{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.tie{
+    display: flex;
+    gap: .5em;
+}
+.iet{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+.fa-star{
+    color: #FFB3CE;
+}
+.decks p{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+}
+.decks p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.foot{
+    text-align: center;
+    padding: 1.5em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #666666;
+    font-size: small;
+}
+.tab{
+    display: none;
+}
+/* media query */
+@media(max-width:901px){
+    .fttt{
+        display: none;
+    }
+    .tab{
+        display: block;
+    }
+    .chows img{
+        display: block;
+        margin: auto;
+    }
+    .ft-1{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    }
+    .decks{
+        width: 70%;
+        margin: auto;
+    }
+    .liss{
+        gap: 2em;
+    }
+    
+    .com{
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+
+    }
+    .com h4{
+       color: #666666;
+       font-family: 'Plus Jakarta Sans', sans-serif; 
+    }
+    .com p{
+        color: white;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+}
+@media(max-width:611px){
+    .ft-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    }
+}
+@media(max-width:583px){
+    .com{
+        justify-content: left;
+        gap: 1em;
+    }
+    .nerr{
+        width: 30%;
+    }
+    .cusi{
+        width: 40%;
+    }
+}
+@media(max-width:440px){
+    .decks{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2em;
+}
 }
