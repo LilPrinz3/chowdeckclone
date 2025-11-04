@@ -1,423 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chow.css">
-    <link rel="shortcut icon" href="./images/chowdeck.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chow.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/chowdeck.png"
+      type="image/x-icon"
+    />
     <title>chowdeck</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="first-list">
-                <a href=""><img src="./images/chow.png" class="logo" alt=""></a>
-                <a class="text" href=""><img src="./images/Nigria.png" class="nig"  alt="">NG</a>
-            </div>
-            <ul class="menu-list">
-                <li><a href="./otherpageshtml/vendor.html">Vendors</a></li>
-                <li><a href="./otherpageshtml/chowpass.html">Chowpass</a></li>
-                <li><a href="./otherpageshtml/contactus.html">Contact us</a></li>
-                <li><a href="./otherpageshtml/riders.html">Riders</a></li>
-                <img src="./images/cart.png" alt="">
-            </ul>
-            <i class="fa-solid fa-bars"></i>
-        </nav>
-    </header>
-    <div class="bg-image">
-        <img src="./images/bg.png" width="100%" height="auto" alt="">
+      <nav>
+        <div class="first-list">
+          <a href=""><img src="./images/chow.png" class="logo" alt="" /></a>
+          <a class="text" href=""
+            ><img src="./images/Nigria.png" class="nig" alt="" />NG</a
+          >
+        </div>
 
+        <!-- normal nav for desktop -->
+        <ul class="menu-list">
+          <li><a href="./otherpageshtml/vendor.html">Vendors</a></li>
+          <li><a href="./otherpageshtml/chowpass.html">Chowpass</a></li>
+          <li><a href="./otherpageshtml/contactus.html">Contact us</a></li>
+          <li><a href="./otherpageshtml/riders.html">Riders</a></li>
+          <img src="./images/cart.png" alt="" />
+        </ul>
+
+        <!-- hamburger icon for mobile -->
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+      </nav>
+
+      <!-- dropdown menu (hidden by default) -->
+      <div class="dropdown-menu" id="mobileMenu">
+        <ul>
+          <li><a href="./otherpageshtml/vendor.html">Vendors</a></li>
+          <li><a href="./otherpageshtml/chowpass.html">Chowpass</a></li>
+          <li><a href="./otherpageshtml/contactus.html">Contact us</a></li>
+          <li><a href="./otherpageshtml/riders.html">Riders</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="bg-image">
+      <img src="./images/bg.png" width="100%" height="auto" alt="" />
     </div>
     <section class="hero-sect">
-        <h1>You don chow?</h1>
-        <div class="btn-1">
-            <a href=""><img src="./images/google.png" width="17px" alt="">Download on Google play</a>
-            <a href=""><img src="./images/imgi_51_apple-512.ico" width="20px" alt="">Download on App store</a>
-        </div>
+      <h1>You don chow?</h1>
+      <div class="btn-1">
+        <a href=""
+          ><img src="./images/google.png" width="17px" alt="" />Download on
+          Google play</a
+        >
+        <a href=""
+          ><img
+            src="./images/imgi_51_apple-512.ico"
+            width="20px"
+            alt=""
+          />Download on App store</a
+        >
+      </div>
     </section>
     <section class="mid-sect">
-        <h1>What's on Deck?</h1>
-        <p>Try the everything app.</p>
-        <div class="mob"><img src="./images/mobile.png" alt=""></div>
-        <div class="paste"><img src="./images/Pastry.png" alt=""></div>
-        <div class="card-1">
-            <div class="res c-boder">
-                <img src="./images/resturants.png" class="ima"  alt="">
-                <h2>Resturants</h2>
-                <span>Order food from a wide variety of restaurants, ranging from
-                African to Continental and Intercontinental cuisines.</span>
-            </div>
-            <div class="shp c-boder">
-                <img src="./images/shop.png" class="ima"  alt="">
-                <h2>Shops</h2>
-                <span>Groceries, household items, and other daily essentials from
-                your trusted stores and supermarkets nearby.</span>
-            </div>
-            <div class="phar c-boder">
-                <img src="./images/pharm.png" class="ima"  alt="">
-                <h2>pharmacies</h2>
-                <span>Over-the-counter meds, wellness products, baby care, and
-                hygiene items from verified pharmacies.</span>
-            </div>
-            <div class="lcm c-boder">
-                <img src="./images/mark.png" class="ima" alt="">
-                <h2>Local Markets</h2>
-                <span>Fresh produce, grains, proteins, fruits, and other groceries 
-                directly from local markets closest to you</span>
-            </div>
+      <h1>What's on Deck?</h1>
+      <p>Try the everything app.</p>
+      <div class="mob"><img src="./images/mobile.png" alt="" /></div>
+      <div class="paste"><img src="./images/Pastry.png" alt="" /></div>
+      <div class="card-1">
+        <div class="res c-boder">
+          <img src="./images/resturants.png" class="ima" alt="" />
+          <h2>Resturants</h2>
+          <span
+            >Order food from a wide variety of restaurants, ranging from African
+            to Continental and Intercontinental cuisines.</span
+          >
         </div>
+        <div class="shp c-boder">
+          <img src="./images/shop.png" class="ima" alt="" />
+          <h2>Shops</h2>
+          <span
+            >Groceries, household items, and other daily essentials from your
+            trusted stores and supermarkets nearby.</span
+          >
+        </div>
+        <div class="phar c-boder">
+          <img src="./images/pharm.png" class="ima" alt="" />
+          <h2>pharmacies</h2>
+          <span
+            >Over-the-counter meds, wellness products, baby care, and hygiene
+            items from verified pharmacies.</span
+          >
+        </div>
+        <div class="lcm c-boder">
+          <img src="./images/mark.png" class="ima" alt="" />
+          <h2>Local Markets</h2>
+          <span
+            >Fresh produce, grains, proteins, fruits, and other groceries
+            directly from local markets closest to you</span
+          >
+        </div>
+      </div>
     </section>
     <section class="last-sect">
-        <p class="tet">Join our growing network<i class="fa-solid fa-arrow-down"></i></p>
-        <div class="card-2">
-            <div class="sell c-boder2">
-                <div class="sun"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#FF884D]" style="color: #FF884D;">
-                 <path d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z" 
-                 fill="currentColor"></path></svg></div>
-                <h2>Start selling</h2>
-                <p>Do you own a restaurant, store, or pharmacy? Join our network to reach new customers and grow your business with ease.</p>
-                <br><a href="">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
-                <img src="./images/pizza.png" class="pics" alt="">
-            </div>
-            <div class="happy c-boder2">
-                <div class="moon"><svg width="40" height="25" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-kiwi" style="color: #02C27F;">
-                    <path d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z" fill="currentColor"></path></svg></div>
-                <h2>Deliver happiness</h2>
-                <p>Join our elite league of delivery riders delivering happiness to customers and earn to achieve your dreams while at it.</p>
-                <br><a href="">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
-                <img src="./images/box.png" class="pics"alt="">
-            </div>
-            <div class="scene c-boder2">
-                <div class="star"><svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-onion-100" style="color: #8C77EC;">
-                 <path d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z" fill="currentColor"></path></svg></div>
-                <h2>Behind the scenes</h2>
-                <p>If you are passionate about helping us achieve our goal to deliver meals seamlessly, come join the team.</p>
-                <br><a href="">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
-                <img src="./images/aliens.png" class="pics" alt="">
-            </div>
+      <p class="tet">
+        Join our growing network<i class="fa-solid fa-arrow-down"></i>
+      </p>
+      <div class="card-2">
+        <div class="sell c-boder2">
+          <div class="sun">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-[#FF884D]"
+              style="color: #ff884d"
+            >
+              <path
+                d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <h2>Start selling</h2>
+          <p>
+            Do you own a restaurant, store, or pharmacy? Join our network to
+            reach new customers and grow your business with ease.
+          </p>
+          <br /><a href="">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
+          <img src="./images/pizza.png" class="pics" alt="" />
         </div>
-    </section> 
+        <div class="happy c-boder2">
+          <div class="moon">
+            <svg
+              width="40"
+              height="25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-kiwi"
+              style="color: #02c27f"
+            >
+              <path
+                d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <h2>Deliver happiness</h2>
+          <p>
+            Join our elite league of delivery riders delivering happiness to
+            customers and earn to achieve your dreams while at it.
+          </p>
+          <br /><a href="">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
+          <img src="./images/box.png" class="pics" alt="" />
+        </div>
+        <div class="scene c-boder2">
+          <div class="star">
+            <svg
+              width="40"
+              height="40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-onion-100"
+              style="color: #8c77ec"
+            >
+              <path
+                d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <h2>Behind the scenes</h2>
+          <p>
+            If you are passionate about helping us achieve our goal to deliver
+            meals seamlessly, come join the team.
+          </p>
+          <br /><a href="">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
+          <img src="./images/aliens.png" class="pics" alt="" />
+        </div>
+      </div>
+    </section>
     <section class="marq">
-        <div class="hold">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                 <div class="caro-container">
-                   <div class="carousel-inner">
-                   
-                        <div class="carousel-item active pack">
-                        <h1>Unpack and enjoy</h1>
-                    </div>
+      <div class="hold">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="caro-container">
+            <div class="carousel-inner">
+              <div class="carousel-item active pack">
+                <h1>Unpack and enjoy</h1>
+              </div>
 
-                    <div class="carousel-item start">
-                        <h1>Get Started in 3</h1>
-                    </div>
+              <div class="carousel-item start">
+                <h1>Get Started in 3</h1>
+              </div>
 
-                    <div class="carousel-item app">
-                        <h1>Download the app</h1>
-                    </div>
-                    <div class="carousel-item exp">
-                        <h1>Explore categories</h1>
-                    </div>
-                    <div class="carousel-item ord">
-                        <h1>Place your order</h1>
-                    </div>
-
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+              <div class="carousel-item app">
+                <h1>Download the app</h1>
+              </div>
+              <div class="carousel-item exp">
+                <h1>Explore categories</h1>
+              </div>
+              <div class="carousel-item ord">
+                <h1>Place your order</h1>
+              </div>
             </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="word">
-            <h2>Chowdeck has you covered <img src="./images/chops.png" alt=""></h2>
-            <p>What do you need? A quick fix on a busy day? Last-minute dinner backup? Supplies for the week? Download Chowdeck and let's deliver happiness to your doorstep in minutes.</p>
+      </div>
+      <div class="word">
+        <h2>
+          Chowdeck has you covered <img src="./images/chops.png" alt="" />
+        </h2>
+        <p>
+          What do you need? A quick fix on a busy day? Last-minute dinner
+          backup? Supplies for the week? Download Chowdeck and let's deliver
+          happiness to your doorstep in minutes.
+        </p>
+      </div>
+      <marquee behavior="smooth" direction="left" scrollamount="14">
+        <div class="quees">
+          <div class="sli">
+            <svg
+              width="40"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-kiwi"
+              style="color: pink"
+            >
+              <path
+                d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>Essential healthcare supplies</p>
+          </div>
+          <div class="sli">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-[#FF884D]"
+              style="color: #ff884d"
+            >
+              <path
+                d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>Quick-grap groceries</p>
+          </div>
+          <div class="sli">
+            <svg
+              width="40"
+              height="40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-onion-100"
+              style="color: #8c77ec"
+            >
+              <path
+                d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>Live updates on orders</p>
+          </div>
+          <div class="sli">
+            <img src="./images/locatin.png" alt="" />
+            <p>Highly rated riders</p>
+          </div>
+          <div class="sli">
+            <svg
+              width="40"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-kiwi"
+              style="color: pink"
+            >
+              <path
+                d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>24/7 support for customers and vendors</p>
+          </div>
+          <div class="sli">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-[#FF884D]"
+              style="color: rgb(208, 208, 40)"
+            >
+              <path
+                d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>Quick and easy onboarding</p>
+          </div>
+          <div class="sli">
+            <svg
+              width="40"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-kiwi"
+              style="color: rgb(219, 150, 22)"
+            >
+              <path
+                d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>Quality meal choices</p>
+          </div>
+          <div class="sli">
+            <svg
+              width="40"
+              height="40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-onion-100"
+              style="color: green"
+            >
+              <path
+                d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>Fresh market picks</p>
+          </div>
         </div>
-        <marquee behavior="smooth" direction="left" scrollamount="14">
-            <div class="quees">
-            <div class="sli">
-                <svg width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-kiwi" style="color: pink;"><path d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z" fill="currentColor"></path></svg>
-                <p>Essential healthcare supplies</p>
-            </div>
-            <div class="sli">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#FF884D]" style="color: #FF884D;">
-                 <path d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z" 
-                 fill="currentColor"></path></svg>
-                <p>Quick-grap groceries</p>
-            </div>
-            <div class="sli">
-                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-onion-100" style="color: #8C77EC;">
-                <path d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z" fill="currentColor"></path></svg>
-                <p>Live updates on orders</p>
-            </div>
-            <div class="sli">
-                <img src="./images/locatin.png" alt="">
-                <p>Highly rated riders</p>
-            </div>
-            <div class="sli">
-                <svg width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-kiwi" style="color: pink;"><path d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z" fill="currentColor"></path></svg>
-                <p>24/7 support for customers and vendors</p>
-            </div>
-            <div class="sli">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#FF884D]" style="color: rgb(208, 208, 40);">
-                 <path d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z" 
-                 fill="currentColor"></path></svg>
-                <p>Quick and easy onboarding</p>
-            </div>
-             <div class="sli">
-                <svg width="40" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-kiwi" style="color: rgb(219, 150, 22);"><path d="M19.739 0A20.261 20.261 0 0 1 40 20.261v3.88H0v-4.402A19.739 19.739 0 0 1 19.739 0Z" fill="currentColor"></path></svg>
-                <p>Quality meal choices</p>
-            </div>
-            <div class="sli">
-                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-onion-100" style="color: green;">
-                <path d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z" fill="currentColor"></path></svg>
-                <p>Fresh market picks</p>
-            </div>
-            </div>
-        </marquee>
-        <marquee behavior="smooth" direction="left" scrollamount="10">
-            <div class="pho">
-                <img src="./images/accept-order.png" style="padding-top: 2.5em;" alt="">
-                <img src="./images/pickup.png" style="padding-top: 5em;" alt="">
-                <img src="./images/transit.png" style="padding-top: 2.5em;" alt="">
-                <img src="./images/arrived.png" style="padding-top: 5em;" alt="">
-                <img src="./images/accept-order.png" style="padding-top: 2.5em;" alt="">
-                <img src="./images/pickup.png" style="padding-top: 5em;" alt="">
-                <img src="./images/transit.png" style="padding-top: 2.5em;" alt="">
-                <img src="./images/arrived.png" style="padding-top: 5em;" alt="">
-            </div>
-        </marquee>  
+      </marquee>
+      <marquee behavior="smooth" direction="left" scrollamount="10">
+        <div class="pho">
+          <img
+            src="./images/accept-order.png"
+            style="padding-top: 2.5em"
+            alt=""
+          />
+          <img src="./images/pickup.png" style="padding-top: 5em" alt="" />
+          <img src="./images/transit.png" style="padding-top: 2.5em" alt="" />
+          <img src="./images/arrived.png" style="padding-top: 5em" alt="" />
+          <img
+            src="./images/accept-order.png"
+            style="padding-top: 2.5em"
+            alt=""
+          />
+          <img src="./images/pickup.png" style="padding-top: 5em" alt="" />
+          <img src="./images/transit.png" style="padding-top: 2.5em" alt="" />
+          <img src="./images/arrived.png" style="padding-top: 5em" alt="" />
+        </div>
+      </marquee>
     </section>
     <section class="story">
-        <h1>Stories<img src="./images/Pasta.png" alt=""></h1>
-        <div class="instruct">
-            <div class=" buy msg">
-                <img src="./images/byyy.png"  alt="">
-                <h2>Food, Groceries, Meds… and Now Phone Chargers?</h2>
-                <p>You've ordered tasty meals, fresh groceries and meds,
-                now we deliver phone chargers and accessories on Chowdeck!</p>
-                <a href="">Read More</a>
-            </div>
-            <div class="blog msg">
-                <img src="./images/blog.png"  alt="">
-                <h2>Brand New PS5 For ₦3K?</h2>
-                <p>Order food on Chowdeck this September and win prizes like iPhones,
-                PS5, microwaves, wigs, and more. Every order counts!</p>
-                <a href="">Read More</a>
-            </div>
-            <div class="things msg">
-                <img src="./images/things.png"  alt="">
-                <h2>5 Things You Will Not Miss About Nigerian Markets</h2>
-                <p>Skip the stress of Lagos markets. Order fresh groceries online in 
-                Nigeria with Chowdeck; on-time delivery, great prices,...</p>
-                <a href="">Read More</a>
-            </div>
+      <h1>Stories<img src="./images/Pasta.png" alt="" /></h1>
+      <div class="instruct">
+        <div class="buy msg">
+          <img src="./images/byyy.png" alt="" />
+          <h2>Food, Groceries, Meds… and Now Phone Chargers?</h2>
+          <p>
+            You've ordered tasty meals, fresh groceries and meds, now we deliver
+            phone chargers and accessories on Chowdeck!
+          </p>
+          <a href="">Read More</a>
         </div>
+        <div class="blog msg">
+          <img src="./images/blog.png" alt="" />
+          <h2>Brand New PS5 For ₦3K?</h2>
+          <p>
+            Order food on Chowdeck this September and win prizes like iPhones,
+            PS5, microwaves, wigs, and more. Every order counts!
+          </p>
+          <a href="">Read More</a>
+        </div>
+        <div class="things msg">
+          <img src="./images/things.png" alt="" />
+          <h2>5 Things You Will Not Miss About Nigerian Markets</h2>
+          <p>
+            Skip the stress of Lagos markets. Order fresh groceries online in
+            Nigeria with Chowdeck; on-time delivery, great prices,...
+          </p>
+          <a href="">Read More</a>
+        </div>
+      </div>
     </section>
     <section class="quest">
-        <div class="ejo">
-            <div class="ejoo-1">
-                <h3>FAQs.</h3>
-                <div class="first-que">
-                    <p>What is chowdeck?</p>
-                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#FF884D]" style="color: #FFC501;">
-                    <path d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z" 
-                    fill="currentColor"></path></svg>
-                </div>
-                <div class="talk"><p>Does chowdeck deliver groceries</p></div>
-                <div class="talk"><p>Will my groceries be fresh if I order on chowdeck?</p></div>
-                <div class="talk"><p>How do I signup as a vendor on chowdeck?</p></div>
-            </div>
-            <div class="answ">
-                <h3>Ans.</h3>
-                <div class="answ-1"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#FF884D]" style="color: black;">
-                <path d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z" 
-                fill="currentColor"></path></svg>
-                <p>Chowdeck is a technology company that provides logistics services to both vendors and customers.
-                Our services allow vendors to deliver their products seamlessly while providing customers with an easy platform to order 
-                meals, groceries, everyday essentials, and health products. Our platform curates a wide range restaurants, markets, shops, and pharmacies in customers' 
-                city and helps them purchase and access their needs conveniently.</p></div>
-            </div>
+      <div class="ejo">
+        <div class="ejoo-1">
+          <h3>FAQs.</h3>
+          <div class="first-que">
+            <p>What is chowdeck?</p>
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-[#FF884D]"
+              style="color: #ffc501"
+            >
+              <path
+                d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <div class="talk"><p>Does chowdeck deliver groceries</p></div>
+          <div class="talk">
+            <p>Will my groceries be fresh if I order on chowdeck?</p>
+          </div>
+          <div class="talk">
+            <p>How do I signup as a vendor on chowdeck?</p>
+          </div>
         </div>
-        <div class="tors">
-            <div class="orst">
-                <h1>Place your order in seconds</h1>
-                <div class="dwn">
-                    <a href=""><img width="15px" src="./images/google.png" alt=""> Download on Google Play</a>
-                </div>
-                <div class="str">
-                    <a href=""><i class="fa-brands fa-apple"></i>Download on App Store</a>
-                </div>
-                <div class="later">
-                    <a class="goo" href=""><img src="./images/google.png" width="19px" height="auto" alt=""></a>
-                    <a href=""><i class="fa-brands fa-apple"></i></a>
-                </div>
-                <div class="ender">
-                    <div class="get">
-                        <img src="./images/Promo-code.png" alt="">
-                        <p class="tars"><i class="fa-solid fa-star"></i><b>CDNWEB</b></p>
-                        <p class="teg">Get <span style="color: #FFC501;">₦300 off</span> your first order when you use this promo code!</p>
-                    </div>
-                    <div class="winer">
-                        <img src="./images/wine.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <img class="hand" src="./images/hand.png" alt="">
+        <div class="answ">
+          <h3>Ans.</h3>
+          <div class="answ-1">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-[#FF884D]"
+              style="color: black"
+            >
+              <path
+                d="m13.733 1.223.579 1.627a1.84 1.84 0 0 0 2.523 1.045l1.56-.741c1.563-.743 3.194.888 2.451 2.451l-.741 1.56a1.838 1.838 0 0 0 1.045 2.523l1.627.578c1.63.58 1.63 2.886 0 3.467l-1.627.579a1.84 1.84 0 0 0-1.045 2.523l.741 1.56c.743 1.563-.888 3.194-2.451 2.451l-1.56-.741a1.839 1.839 0 0 0-2.523 1.044l-.579 1.628c-.58 1.63-2.886 1.63-3.466 0l-.579-1.628a1.84 1.84 0 0 0-2.523-1.044l-1.56.74c-1.563.744-3.194-.887-2.451-2.45l.741-1.56A1.84 1.84 0 0 0 2.85 14.31l-1.627-.578c-1.63-.58-1.63-2.887 0-3.467l1.627-.578a1.84 1.84 0 0 0 1.048-2.523l-.742-1.56c-.743-1.564.888-3.195 2.452-2.452l1.56.742A1.84 1.84 0 0 0 9.69 2.85l.578-1.627c.578-1.63 2.884-1.63 3.464 0Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <p>
+              Chowdeck is a technology company that provides logistics services
+              to both vendors and customers. Our services allow vendors to
+              deliver their products seamlessly while providing customers with
+              an easy platform to order meals, groceries, everyday essentials,
+              and health products. Our platform curates a wide range
+              restaurants, markets, shops, and pharmacies in customers' city and
+              helps them purchase and access their needs conveniently.
+            </p>
+          </div>
         </div>
-        <div class="ending">
-            <div class="ing">
-                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-onion-100" style="color: #FFEDB3;">
-                <path d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z" fill="currentColor"></path></svg>
-                <p class="pee">Cool stuff only <span class="spa" style="color: #FFEDB3;">Subscribe to our newsletter</span></p>
+      </div>
+      <div class="tors">
+        <div class="orst">
+          <h1>Place your order in seconds</h1>
+          <div class="dwn">
+            <a href=""
+              ><img width="15px" src="./images/google.png" alt="" /> Download on
+              Google Play</a
+            >
+          </div>
+          <div class="str">
+            <a href=""
+              ><i class="fa-brands fa-apple"></i>Download on App Store</a
+            >
+          </div>
+          <div class="later">
+            <a class="goo" href=""
+              ><img src="./images/google.png" width="19px" height="auto" alt=""
+            /></a>
+            <a href=""><i class="fa-brands fa-apple"></i></a>
+          </div>
+          <div class="ender">
+            <div class="get">
+              <img src="./images/Promo-code.png" alt="" />
+              <p class="tars"><i class="fa-solid fa-star"></i><b>CDNWEB</b></p>
+              <p class="teg">
+                Get <span style="color: #ffc501">₦300 off</span> your first
+                order when you use this promo code!
+              </p>
             </div>
-            <img src="./images/pack.png"  alt="">
+            <div class="winer">
+              <img src="./images/wine.png" alt="" />
+            </div>
+          </div>
         </div>
-        <hr style="width: 95%; margin: auto; border-bottom: 2px solid #666666;">
-        <footer>
-            <div class="fttt">
-            <div class="ft-1">
-                <p>yourname@email.com</p>
-                <div><img src="./images/left.png" width="30px" alt=""></div>
+        <img class="hand" src="./images/hand.png" alt="" />
+      </div>
+      <div class="ending">
+        <div class="ing">
+          <svg
+            width="40"
+            height="40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="text-onion-100"
+            style="color: #ffedb3"
+          >
+            <path
+              d="M20 0s-.834 17.324-20 20c0 0 16.453.315 20 20 0 0 1.13-17.018 20-20 0 0-17.93-2.523-20-20Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <p class="pee">
+            Cool stuff only
+            <span class="spa" style="color: #ffedb3"
+              >Subscribe to our newsletter</span
+            >
+          </p>
+        </div>
+        <img src="./images/pack.png" alt="" />
+      </div>
+      <hr style="width: 95%; margin: auto; border-bottom: 2px solid #666666" />
+      <footer>
+        <div class="fttt">
+          <div class="ft-1">
+            <p>yourname@email.com</p>
+            <div><img src="./images/left.png" width="30px" alt="" /></div>
+          </div>
+          <hr
+            style="width: 95%; margin: auto; border-bottom: 2px solid #666666"
+          />
+          <div class="liss">
+            <div class="def"><img src="./images/default.png" alt="" /></div>
+            <div class="com">
+              <h4>COMPANY</h4>
+              <p>Customers</p>
+              <p>Vendors</p>
+              <p>Riders</p>
+              <p>Storefront</p>
+              <p>Documenation</p>
+              <p>About</p>
+              <p>Careers</p>
+              <p>FAQS</p>
+              <p>Blog</p>
+              <p>Contact</p>
+              <p>Terms of use</p>
+              <p>Privacy Policy</p>
             </div>
-            <hr style="width: 95%; margin: auto; border-bottom: 2px solid #666666;">
-            <div class="liss">
-                <div class="def"><img src="./images/default.png" alt=""></div>
-                <div class="com">
-                    <h4>COMPANY</h4>
-                    <p>Customers</p>
-                    <p>Vendors</p>
-                    <p>Riders</p>
-                    <p>Storefront</p>
-                    <p>Documenation</p>
-                    <p>About</p>
-                    <p>Careers</p>
-                    <p>FAQS</p>
-                    <p>Blog</p>
-                    <p>Contact</p>
-                    <p>Terms of use</p>
-                    <p>Privacy Policy</p>
-                </div>
-                <div class="com">
-                    <h4>CUSINES NEAR YOU</h4>
-                    <p>Pasta near me</p>
-                    <p>Rice near me</p>
-                    <p>Fast food near me</p>
-                    <p>Asain food in Lagos</p>
-                    <p>African food in Lagos</p>
-                    <p>Breakfast menu in Lagos</p>
-                    <p>Fitfam stores in Lagos</p>
-                    <p>American food in Lagos</p>
-                    <p>Pastries in Lagos</p>
-                    <p>Salad in Lagos</p>
-                    <p>Fruits in Lagos</p>
-                </div>
-                <div class="com">
-                    <h4>POPULAR</h4>
-                    <p>Food delivery</p>
-                    <p>Surulere</p>
-                    <p>Ogudu</p>
-                    <p>Yaba</p>
-                    <p>Ikeja</p>
-                    <p>Lekki</p>
-                    <p>King Galab</p>
-                    <p>Korede Spaghetti</p>
-                    <p>Iyan Aladuke</p>
-                    <p>Food Fusion</p>
-                    <p>Belefull</p>
-                </div>
+            <div class="com">
+              <h4>CUSINES NEAR YOU</h4>
+              <p>Pasta near me</p>
+              <p>Rice near me</p>
+              <p>Fast food near me</p>
+              <p>Asain food in Lagos</p>
+              <p>African food in Lagos</p>
+              <p>Breakfast menu in Lagos</p>
+              <p>Fitfam stores in Lagos</p>
+              <p>American food in Lagos</p>
+              <p>Pastries in Lagos</p>
+              <p>Salad in Lagos</p>
+              <p>Fruits in Lagos</p>
             </div>
-            <div class="decks">
-                <div><img src="./images/chow.png" alt=""></div>
-                <div>
-                    <p><img src="./images/twi.png" alt=""> Twitter</p>
-                    <p><img src="./images/face.png" alt=""> Facebook</p>
-                </div>
-                <div>
-                  <p><i class="fa-solid fa-star"></i> Instagram</p>
-                  <p><img src="./images/link.png" alt=""> Linkedln</p>
-                </div>
+            <div class="com">
+              <h4>POPULAR</h4>
+              <p>Food delivery</p>
+              <p>Surulere</p>
+              <p>Ogudu</p>
+              <p>Yaba</p>
+              <p>Ikeja</p>
+              <p>Lekki</p>
+              <p>King Galab</p>
+              <p>Korede Spaghetti</p>
+              <p>Iyan Aladuke</p>
+              <p>Food Fusion</p>
+              <p>Belefull</p>
             </div>
-            <hr style="width: 95%; margin: auto; border-bottom: 2px solid #666666;">
-            <div class="foot">
-                <p><i class="fa-regular fa-copyright"></i>All Rights Reserved.2025,Chowdeck Logistics Inc.</p>
+          </div>
+          <div class="decks">
+            <div><img src="./images/chow.png" alt="" /></div>
+            <div>
+              <p><img src="./images/twi.png" alt="" /> Twitter</p>
+              <p><img src="./images/face.png" alt="" /> Facebook</p>
             </div>
+            <div>
+              <p><i class="fa-solid fa-star"></i> Instagram</p>
+              <p><img src="./images/link.png" alt="" /> Linkedln</p>
             </div>
-            <!-- tab footer -->
-            <div class="tab">
-                <div class="ft-1">
-                    <p>yourname@email.com</p>
-                    <div><img src="./images/left.png" width="30px" alt=""></div>
-                </div>
-                <hr style="width: 95%; margin: auto; border-bottom: 2px solid #666666;">
-                <div class="decks">
-                    <div>
-                        <p><img src="./images/twi.png" alt=""> Twitter</p>
-                        <p><img src="./images/face.png" alt=""> Facebook</p>
-                    </div>
-                    <div>
-                        <p><i class="fa-solid fa-star"></i> Instagram</p>
-                        <p><img src="./images/link.png" alt=""> Linkedln</p>
-                    </div>
-                </div>
-                <div class="com">
-                    <div><h4>COMPANY</h4></div>
-                    <div><p>Customers</p>
-                    <p>Vendors</p>
-                    <p>Riders</p>
-                    <p>Storefront</p>
-                    <p>Documenation</p>
-                    <p>About</p>
-                    <p>Careers</p>
-                    <p>FAQS</p>
-                    <p>Blog</p>
-                    <p>Contact</p>
-                    <p>Terms of use</p>
-                    <p>Privacy Policy</p></div>
-                </div>
-                <div class="com">
-                    <div class="nerr"><h4>CUSINES NEAR YOU</h4></div>
-                    <div class="cusi"><p>Pasta near me</p>
-                    <p>Rice near me</p>
-                    <p>Fast food near me</p>
-                    <p>Asain food in Lagos</p>
-                    <p>African food in Lagos</p>
-                    <p>Breakfast menu in Lagos</p>
-                    <p>Fitfam stores in Lagos</p>
-                    <p>American food in Lagos</p>
-                    <p>Pastries in Lagos</p>
-                    <p>Salad in Lagos</p>
-                    <p>Fruits in Lagos</p></div>
-                </div>
-                <div class="com">
-                    <div><h4>POPULAR</h4></div>
-                    <div><p>Food delivery</p>
-                    <p>Surulere</p>
-                    <p>Ogudu</p>
-                    <p>Yaba</p>
-                    <p>Ikeja</p>
-                    <p>Lekki</p>
-                    <p>King Galab</p>
-                    <p>Korede Spaghetti</p>
-                    <p>Iyan Aladuke</p>
-                    <p>Food Fusion</p>
-                    <p>Belefull</p></div>
-                </div>
-                <div class="chows"><img src="./images/chow.png" alt=""></div>
-                <div class="foot">
-                    <p><i class="fa-regular fa-copyright"></i>All Rights Reserved.2025,Chowdeck Logistics Inc.</p>
-                </div>
+          </div>
+          <hr
+            style="width: 95%; margin: auto; border-bottom: 2px solid #666666"
+          />
+          <div class="foot">
+            <p>
+              <i class="fa-regular fa-copyright"></i>All Rights
+              Reserved.2025,Chowdeck Logistics Inc.
+            </p>
+          </div>
+        </div>
+        <!-- tab footer -->
+        <div class="tab">
+          <div class="ft-1">
+            <p>yourname@email.com</p>
+            <div><img src="./images/left.png" width="30px" alt="" /></div>
+          </div>
+          <hr
+            style="width: 95%; margin: auto; border-bottom: 2px solid #666666"
+          />
+          <div class="decks">
+            <div>
+              <p><img src="./images/twi.png" alt="" /> Twitter</p>
+              <p><img src="./images/face.png" alt="" /> Facebook</p>
             </div>
-        </footer>
+            <div>
+              <p><i class="fa-solid fa-star"></i> Instagram</p>
+              <p><img src="./images/link.png" alt="" /> Linkedln</p>
+            </div>
+          </div>
+          <div class="com">
+            <div><h4>COMPANY</h4></div>
+            <div>
+              <p>Customers</p>
+              <p>Vendors</p>
+              <p>Riders</p>
+              <p>Storefront</p>
+              <p>Documenation</p>
+              <p>About</p>
+              <p>Careers</p>
+              <p>FAQS</p>
+              <p>Blog</p>
+              <p>Contact</p>
+              <p>Terms of use</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+          <div class="com">
+            <div class="nerr"><h4>CUSINES NEAR YOU</h4></div>
+            <div class="cusi">
+              <p>Pasta near me</p>
+              <p>Rice near me</p>
+              <p>Fast food near me</p>
+              <p>Asain food in Lagos</p>
+              <p>African food in Lagos</p>
+              <p>Breakfast menu in Lagos</p>
+              <p>Fitfam stores in Lagos</p>
+              <p>American food in Lagos</p>
+              <p>Pastries in Lagos</p>
+              <p>Salad in Lagos</p>
+              <p>Fruits in Lagos</p>
+            </div>
+          </div>
+          <div class="com">
+            <div><h4>POPULAR</h4></div>
+            <div>
+              <p>Food delivery</p>
+              <p>Surulere</p>
+              <p>Ogudu</p>
+              <p>Yaba</p>
+              <p>Ikeja</p>
+              <p>Lekki</p>
+              <p>King Galab</p>
+              <p>Korede Spaghetti</p>
+              <p>Iyan Aladuke</p>
+              <p>Food Fusion</p>
+              <p>Belefull</p>
+            </div>
+          </div>
+          <div class="chows"><img src="./images/chow.png" alt="" /></div>
+          <div class="foot">
+            <p>
+              <i class="fa-regular fa-copyright"></i>All Rights
+              Reserved.2025,Chowdeck Logistics Inc.
+            </p>
+          </div>
+        </div>
+      </footer>
     </section>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show');
+    hamburger.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+</script>
+
 </html>

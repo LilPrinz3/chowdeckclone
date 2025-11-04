@@ -12,20 +12,36 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="first-list">
-                <a href="../index.html"><img src="../images/chow.png" class="logo" alt=""></a>
-                <a class="text" href=""><img src="../images/Nigria.png" class="nig"  alt="">NG</a>
-            </div>
-            <ul class="menu-list">
-                <li><a href="./vendor.html">Vendors</a></li>
-                <li><a href="./chowpass.html">Chowpass</a></li>
-                <li><a href="./contactus.html">Contact us</a></li>
-                <li><a href="">Riders</a></li>
-                <img src="../images/cart.png" alt="">
-            </ul>
-            <i class="fa-solid fa-bars"></i>
-        </nav>
+      <nav>
+        <div class="first-list">
+          <a href="../index.html"><img src="../images/chow.png" class="logo" alt="" /></a>
+          <a class="text" href=""
+            ><img src="../images/Nigria.png" class="nig" alt="" />NG</a
+          >
+        </div>
+
+        <!-- normal nav for desktop -->
+        <ul class="menu-list">
+          <li><a href="./vendor.html">Vendors</a></li>
+          <li><a href="./chowpass.html">Chowpass</a></li>
+          <li><a href="./contactus.html">Contact us</a></li>
+          <li><a href="">Riders</a></li>
+          <img src="../images/cart.png" alt="" />
+        </ul>
+
+        <!-- hamburger icon for mobile -->
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+      </nav>
+
+      <!-- dropdown menu (hidden by default) -->
+      <div class="dropdown-menu" id="mobileMenu">
+        <ul>
+          <li><a href="./vendor.html">Vendors</a></li>
+          <li><a href="./chowpass.html">Chowpass</a></li>
+          <li><a href="./contactus.html">Contact us</a></li>
+          <li><a href="">Riders</a></li>
+        </ul>
+      </div>
     </header>
     <section class="hero-sect">
         <div class="hero-1">
@@ -308,4 +324,14 @@
         </footer>
     </section>
 </body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show');
+    hamburger.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+</script>
 </html>

@@ -78,13 +78,13 @@ nav .fa-bars{
 }
 /* media query */
 @media (max-width: 1026px){
-    .menu-list{
-        display: none;
-    }
-    nav .fa-bars{
-        display: block;
-        font-size: 2.5em;
-    }
+      .menu-list {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    font-size: 2.5em;
+  }
     .logo{
         width: 200px;
     }
@@ -1334,3 +1334,51 @@ nav .fa-bars{
 
 
 
+/* Hide the mobile dropdown by default */
+.dropdown-menu {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.dropdown-menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #FF884D;
+}
+
+/* Show dropdown when toggled */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Hamburger style for mobile */
+#hamburger {
+  font-size: 2.5em;
+  cursor: pointer;
+  /* display: none; hidden by default */
+}
